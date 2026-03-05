@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Basewise Consultancy B.V. | Systems Engineering",
+  title: "Basewise Consultancy B.V. | Systems Engineering & AI",
   description:
-    "Systems Engineering consultancy voor infrastructuur en bouw in Nederland. Basewise helpt complexe projecten beheersbaar te maken.",
+    "Systems Engineering consultancy voor infrastructuur en bouw in Nederland. Basewise helpt complexe projecten beheersbaar te maken met SE en AI.",
 };
 
 export default function RootLayout({
@@ -16,11 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl">
-      <body className="antialiased">
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
