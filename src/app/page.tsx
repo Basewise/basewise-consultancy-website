@@ -295,6 +295,7 @@ export default function Home() {
             { src: "/logo SUBHEADING (10).png", alt: "Overmorrow" },
             { src: "/logo SUBHEADING (11).png", alt: "De Groot Installatiegroep" },
             { src: "/logo SUBHEADING (12).png", alt: "Gemeente Amsterdam" },
+            { src: "/logo SUBHEADING (13).png", alt: "Van Oord" },
           ].map((logo) => (
             <div className="logo-cell" key={logo.src}>
               <Image
