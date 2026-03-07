@@ -9,7 +9,7 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      eyebrow: "Systems Engineering Consultancy \u2022 Nederland",
+      eyebrow: "Systems Engineering Consultancy",
       h1_line1: "Grip op",
       h1_line2: "Complexiteit",
       h1_line3: "",
@@ -144,7 +144,7 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      eyebrow: "Systems Engineering Consultancy \u2022 The Netherlands",
+      eyebrow: "Systems Engineering Consultancy",
       h1_line1: "Grip on",
       h1_line2: "Complexity",
       h1_line3: "",
