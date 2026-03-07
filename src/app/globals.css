@@ -718,6 +718,13 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
   overflow: hidden;
   line-height: 0;
 }
+.project-visual img {
+  animation: kenburns 20s ease-in-out infinite alternate;
+}
+@keyframes kenburns {
+  0%   { transform: scale(1)   translate(0, 0); }
+  100% { transform: scale(1.08) translate(-1%, -1%); }
+}
 
 /* ── REFERENTIES ── */
 .logo-grid {

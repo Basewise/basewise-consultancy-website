@@ -271,7 +271,7 @@ export default function Home() {
           alt="Basewise projecten — isometrisch overzicht"
           width={1920}
           height={1080}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          style={{ width: "100%", height: "500px", objectFit: "cover", objectPosition: "center 30%" }}
         />
       </div>
 
