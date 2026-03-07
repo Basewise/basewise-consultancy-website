@@ -264,6 +264,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── PROJECT VISUAL ─── */}
+      <div className="project-visual">
+        <Image
+          src="/project-visual.jpg"
+          alt="Basewise projecten — isometrisch overzicht"
+          width={1920}
+          height={1080}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        />
+      </div>
+
       {/* ─── REFERENTIES ─── */}
       <section id="referenties">
         <div className="section-title">{t.references.title}</div>
@@ -281,8 +292,10 @@ export default function Home() {
             { src: "/logo SUBHEADING (8).png", alt: "Lammerink" },
             { src: "/logo SUBHEADING (9).png", alt: "VolkerWessels" },
             { src: "/logo SUBHEADING (10).png", alt: "Overmorrow" },
+            { src: "/logo SUBHEADING (11).png", alt: "De Groot Installatiegroep" },
+            { src: "/logo SUBHEADING (12).png", alt: "De Groot Installatiegroep" },
           ].map((logo) => (
-            <div className="logo-cell" key={logo.alt}>
+            <div className="logo-cell" key={logo.src}>
               <Image
                 src={logo.src}
                 alt={logo.alt}

@@ -7,6 +7,12 @@
   --grey-light: #E8E8E8;
   --off-white: #F2F2F2;
   --magenta: #D81B60;
+
+  --text-xs: 0.6rem;
+  --text-sm: 0.75rem;
+  --text-base: 0.9375rem;
+  --text-md: 1.05rem;
+  --text-lg: 1.125rem;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -57,14 +63,14 @@ nav {
 .nav-logo-text strong {
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 900;
-  font-size: 1.05rem;
+  font-size: var(--text-md);
   color: var(--navy);
   letter-spacing: 0.14em;
 }
 
 .nav-logo-text span {
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 0.5rem;
+  font-size: var(--text-xs);
   font-weight: 400;
   letter-spacing: 0.42em;
   color: var(--grey-dark);
@@ -85,7 +91,7 @@ nav {
 
 .lang-toggle span {
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 0.6rem;
+  font-size: var(--text-xs);
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -170,7 +176,7 @@ nav {
   color: var(--grey-dark);
   text-decoration: none;
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 0.65rem;
+  font-size: var(--text-sm);
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -204,7 +210,7 @@ nav {
 
 .hero-eyebrow {
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 0.66rem;
+  font-size: var(--text-lg);
   font-weight: 600;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -228,7 +234,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 }
 
 .hero-text {
-  font-size: 1rem;
+  font-size: var(--text-base);
   color: var(--grey-dark);
   line-height: 1.85;
   max-width: 560px;
@@ -245,7 +251,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
   padding: 0.9rem 2.4rem;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 600;
-  font-size: 0.7rem;
+  font-size: var(--text-sm);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   text-decoration: none;
@@ -257,7 +263,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 
 .btn-ghost {
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 0.7rem;
+  font-size: var(--text-sm);
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -268,7 +274,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
   gap: 8px;
   transition: color 0.2s;
 }
-.btn-ghost::after { content: '\2192'; font-size: 1rem; }
+.btn-ghost::after { content: '\2192'; font-size: var(--text-base); }
 .btn-ghost:hover { color: var(--navy); }
 
 /* ── INTRO ── */
@@ -292,7 +298,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 }
 
 .intro-inner p {
-  font-size: 1.05rem;
+  font-size: var(--text-md);
   color: var(--grey-dark);
   line-height: 2;
   font-weight: 300;
@@ -399,7 +405,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
   align-items: center;
   justify-content: center;
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 0.55rem;
+  font-size: var(--text-xs);
   letter-spacing: 0.2em;
   color: var(--grey-mid);
   text-transform: uppercase;
@@ -415,7 +421,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 
 .dienst-featured-label {
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 0.55rem;
+  font-size: var(--text-xs);
   font-weight: 600;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -440,7 +446,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 
 .dienst-item-label {
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 11px;
+  font-size: var(--text-sm);
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -451,14 +457,14 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 .dienst-item-title {
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: var(--text-lg);
   color: var(--navy);
   margin-bottom: 0.8rem;
   line-height: 1.2;
 }
 
 .dienst-item-text {
-  font-size: 15px;
+  font-size: var(--text-base);
   color: var(--grey-dark);
   line-height: 1.85;
   font-weight: 300;
@@ -495,7 +501,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 .ai-platform-img-caption {
   margin-top: 0.8rem;
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 0.7rem;
+  font-size: var(--text-sm);
   font-weight: 600;
   letter-spacing: 0.2em;
   color: #E8E8E8;
@@ -510,12 +516,12 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 .ai-feature-title {
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 600;
-  font-size: 0.82rem;
+  font-size: var(--text-base);
   color: #F5F5F6;
   margin-bottom: 0.2rem;
 }
 .ai-feature-text {
-  font-size: 0.82rem;
+  font-size: var(--text-base);
   color: #E8E8E8;
   line-height: 1.5;
   font-weight: 300;
@@ -531,7 +537,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
   color: #F5F5F6;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 600;
-  font-size: 0.72rem;
+  font-size: var(--text-sm);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   text-decoration: none;
@@ -542,13 +548,13 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
   border: 1px solid #F5F5F6;
   transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
-.ai-platform-text a::after { content: "\2192"; font-size: 1rem; }
+.ai-platform-text a::after { content: "\2192"; font-size: var(--text-base); }
 .ai-platform-text a:hover { background: var(--magenta); border-color: var(--magenta); color: #fff; }
 
 /* ── WERKWIJZE circles ── */
 .werkwijze-intro {
   text-align: center;
-  font-size: 1rem;
+  font-size: var(--text-base);
   color: var(--grey-dark);
   max-width: 520px;
   margin: 0 auto 5rem;
@@ -570,7 +576,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 .circle-item + .circle-item { margin-left: -30px; }
 .circle-label {
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 0.6rem;
+  font-size: var(--text-xs);
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -589,13 +595,13 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 .werkwijze-subtitle {
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: var(--text-md);
   color: var(--navy);
   margin-top: 2rem;
   margin-bottom: 0.75rem;
 }
 .werkwijze-text {
-  font-size: 0.93rem;
+  font-size: var(--text-base);
   color: var(--grey-dark);
   line-height: 1.9;
   font-weight: 300;
@@ -606,7 +612,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
   padding: 0;
 }
 .werkwijze-list li {
-  font-size: 0.93rem;
+  font-size: var(--text-base);
   color: var(--grey-dark);
   line-height: 1.9;
   font-weight: 300;
@@ -638,7 +644,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
   line-height: 1.05;
 }
 .over-text p {
-  font-size: 0.93rem;
+  font-size: var(--text-base);
   color: var(--grey-dark);
   line-height: 1.9;
   font-weight: 300;
@@ -647,7 +653,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 .over-subtitle {
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: var(--text-md);
   color: var(--navy);
   margin-top: 2rem;
   margin-bottom: 0.75rem;
@@ -658,7 +664,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
   margin-bottom: 1rem;
 }
 .over-list li {
-  font-size: 0.93rem;
+  font-size: var(--text-base);
   color: var(--grey-dark);
   line-height: 1.9;
   font-weight: 300;
@@ -672,7 +678,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
   color: var(--magenta);
 }
 .over-text .onderdeel {
-  font-size: 0.76rem;
+  font-size: var(--text-sm);
   color: var(--grey-mid);
   margin-top: 1.5rem;
   padding-top: 1.5rem;
@@ -689,7 +695,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 .about-photo-caption {
   max-width: 260px;
   margin-top: 1rem;
-  font-size: 0.8rem;
+  font-size: var(--text-sm);
   color: var(--grey-dark);
   line-height: 1.5;
   font-weight: 300;
@@ -699,10 +705,18 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   font-style: italic;
-  font-size: 0.93rem;
+  font-size: var(--text-base);
   color: var(--grey-dark);
   line-height: 1.8;
   font-weight: 400;
+}
+
+/* ── PROJECT VISUAL ── */
+.project-visual {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  line-height: 0;
 }
 
 /* ── REFERENTIES ── */
@@ -736,7 +750,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 .logo-cell:hover { background: #fff; }
 
 .ref-note {
-  font-size: 0.74rem;
+  font-size: var(--text-sm);
   color: var(--grey-mid);
   font-family: 'Red Hat Display', sans-serif;
   letter-spacing: 0.1em;
@@ -761,7 +775,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 .contact-info h3 {
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: var(--text-sm);
   letter-spacing: 0.26em;
   text-transform: uppercase;
   color: var(--grey-mid);
@@ -769,7 +783,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 }
 .contact-info address {
   font-style: normal;
-  font-size: 1rem;
+  font-size: var(--text-base);
   color: rgba(255,255,255,0.5);
   line-height: 2.4;
   font-weight: 300;
@@ -778,7 +792,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
   margin-top: 2rem;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(255,255,255,0.07);
-  font-size: 0.73rem;
+  font-size: var(--text-sm);
   color: rgba(255,255,255,0.22);
   font-family: 'Red Hat Display', sans-serif;
   letter-spacing: 0.06em;
@@ -788,7 +802,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 .form-group label {
   display: block;
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 0.75rem;
+  font-size: var(--text-sm);
   font-weight: 600;
   letter-spacing: 0.24em;
   text-transform: uppercase;
@@ -803,7 +817,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
   border: none;
   border-bottom: 1px solid rgba(255,255,255,0.12);
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
+  font-size: var(--text-base);
   color: #fff;
   outline: none;
   transition: border-color 0.2s;
@@ -817,7 +831,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
 
 .form-error {
   color: var(--magenta);
-  font-size: 0.85rem;
+  font-size: var(--text-base);
   margin-bottom: 1.5rem;
 }
 
@@ -832,7 +846,7 @@ h1 .light { font-weight: 300; color: var(--grey-dark); }
   padding: 0.85rem 2.4rem;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 600;
-  font-size: 0.68rem;
+  font-size: var(--text-sm);
   letter-spacing: 0.22em;
   text-transform: uppercase;
   border: 1px solid rgba(255,255,255,0.22);
@@ -853,9 +867,9 @@ footer {
   gap: 1rem;
   border-top: 1px solid rgba(255,255,255,0.06);
 }
-footer p { font-size: 0.68rem; color: rgba(255,255,255,0.22); font-family: 'Red Hat Display', sans-serif; letter-spacing: 0.05em; }
+footer p { font-size: var(--text-sm); color: rgba(255,255,255,0.22); font-family: 'Red Hat Display', sans-serif; letter-spacing: 0.05em; }
 .footer-links { display: flex; gap: 2rem; }
-footer a { font-size: 0.68rem; color: rgba(255,255,255,0.22); text-decoration: none; font-family: 'Red Hat Display', sans-serif; letter-spacing: 0.1em; font-weight: 600; transition: color 0.2s; }
+footer a { font-size: var(--text-sm); color: rgba(255,255,255,0.22); text-decoration: none; font-family: 'Red Hat Display', sans-serif; letter-spacing: 0.1em; font-weight: 600; transition: color 0.2s; }
 footer a:hover { color: #fff; }
 
 /* ── THANK YOU ── */
@@ -866,12 +880,12 @@ footer a:hover { color: #fff; }
 .thank-you h3 {
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: var(--text-lg);
   color: #fff;
   margin-bottom: 0.5rem;
 }
 .thank-you p {
-  font-size: 0.88rem;
+  font-size: var(--text-base);
   color: rgba(255,255,255,0.5);
   font-weight: 300;
 }
