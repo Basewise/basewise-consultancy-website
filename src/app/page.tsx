@@ -293,7 +293,7 @@ export default function Home() {
             { src: "/logo SUBHEADING (9).png", alt: "VolkerWessels" },
             { src: "/logo SUBHEADING (10).png", alt: "Overmorrow" },
             { src: "/logo SUBHEADING (11).png", alt: "De Groot Installatiegroep" },
-            { src: "/logo SUBHEADING (12).png", alt: "De Groot Installatiegroep" },
+            { src: "/logo SUBHEADING (12).png", alt: "Gemeente Amsterdam" },
           ].map((logo) => (
             <div className="logo-cell" key={logo.src}>
               <Image
