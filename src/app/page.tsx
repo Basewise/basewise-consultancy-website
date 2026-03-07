@@ -253,12 +253,13 @@ export default function Home() {
               />
             </div>
             <div className="about-photo-caption">
-              Christian van Eken | Eigenaar en Senior consultant Systems Engineering
+              {t.about.photoCaption}
             </div>
             <blockquote className="about-quote">
-              <p><strong>Systemen zijn complex, de aanpak hoeft dat niet te zijn.</strong></p>
-              <p>Bij Basewise draait Systems Engineering om het resultaat, niet om de methode. Waar anderen zich verliezen in ingewikkelde terminologie en theoretische modellen, focus ik op wat er echt toe doet: een werkend systeem dat naadloos aansluit op de klantvraag.</p>
-              <p>Ik geloof in gezond verstand met een checklist. Geen eindeloze zijpaden, maar een strak proces zodat jij de controle houdt over de techniek én de planning. En die complexe tooling? Die zet ik in als hulpmiddel, nooit als hindernis. Zo maken we van Systems Engineering wat het moet zijn: een versneller van je project, geen vertrager.</p>
+              <p><strong>{t.about.quoteIntro}</strong></p>
+              {t.about.quoteParagraphs.map((p: string, i: number) => (
+                <p key={i}>{p}</p>
+              ))}
             </blockquote>
           </div>
         </div>

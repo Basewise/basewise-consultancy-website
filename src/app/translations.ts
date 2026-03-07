@@ -100,6 +100,12 @@ export const translations = {
         ],
       },
       parent: "Onderdeel van Next Tide Group B.V.",
+      photoCaption: "Christian van Eken | Eigenaar en Senior consultant Systems Engineering",
+      quoteIntro: "Systemen zijn complex, de aanpak hoeft dat niet te zijn.",
+      quoteParagraphs: [
+        "Bij Basewise draait Systems Engineering om het resultaat, niet om de methode. Waar anderen zich verliezen in ingewikkelde terminologie en theoretische modellen, focus ik op wat er echt toe doet: een werkend systeem dat naadloos aansluit op de klantvraag.",
+        "Ik geloof in gezond verstand met een checklist. Geen eindeloze zijpaden, maar een strak proces zodat jij de controle houdt over de techniek én de planning. En die complexe tooling? Die zet ik in als hulpmiddel, nooit als hindernis. Zo maken we van Systems Engineering wat het moet zijn: een versneller van je project, geen vertrager.",
+      ],
       highlights: [
         { title: "INCOSE gecertificeerd", text: "Internationaal erkende SE-standaarden" },
         { title: "UAV-GC specialist", text: "Diepgaande kennis van contractraamwerken" },
@@ -235,6 +241,12 @@ export const translations = {
         ],
       },
       parent: "Part of Next Tide Group B.V.",
+      photoCaption: "Christian van Eken | Owner and Senior Systems Engineering Consultant",
+      quoteIntro: "Systems are complex, the approach doesn\u2019t have to be.",
+      quoteParagraphs: [
+        "At Basewise, Systems Engineering is about the result, not the method. Where others get lost in complicated terminology and theoretical models, I focus on what truly matters: a working system that seamlessly meets the client\u2019s needs.",
+        "I believe in common sense with a checklist. No endless detours, but a tight process so you stay in control of both the technology and the planning. And that complex tooling? I use it as an aid, never as an obstacle. That\u2019s how we make Systems Engineering what it should be: an accelerator for your project, not a decelerator.",
+      ],
       highlights: [
         { title: "INCOSE certified", text: "Internationally recognised SE standards" },
         { title: "UAV-GC specialist", text: "In-depth knowledge of contract frameworks" },
