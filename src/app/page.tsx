@@ -8,6 +8,7 @@ import { sendContactEmail } from "./actions";
 export default function Home() {
   const [formState, formAction, isPending] = useActionState(sendContactEmail, { success: false });
   const [lang, setLang] = useState<Lang>("nl");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const t = translations[lang];
 
@@ -41,17 +42,22 @@ export default function Home() {
           </div>
 
           {/* Hamburger — right */}
-          <button className="nav-hamburger" aria-label="Menu">
+          <button
+            className={`nav-hamburger ${menuOpen ? "open" : ""}`}
+            aria-label="Menu"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((open) => !open)}
+          >
             <span />
             <span />
             <span />
           </button>
 
-          {/* Nav links (shown on hamburger hover) */}
-          <ul className="nav-links">
+          {/* Nav links (toggled by hamburger) */}
+          <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href}>{link.label}</a>
+                <a href={link.href} onClick={() => setMenuOpen(false)}>{link.label}</a>
               </li>
             ))}
           </ul>

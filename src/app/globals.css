@@ -157,7 +157,8 @@ nav {
   transition: background 0.2s;
 }
 
-.nav-hamburger:hover span { background: var(--magenta); }
+.nav-hamburger:hover span,
+.nav-hamburger.open span { background: var(--magenta); }
 
 /* Menu links */
 .nav-links {
@@ -185,12 +186,33 @@ nav {
 
 .nav-links a:hover { color: var(--navy); }
 
-/* On hamburger hover: hide logo, show links */
-.nav-hamburger:hover ~ .nav-logo,
-.nav-links:hover ~ .nav-logo { opacity: 0; pointer-events: none; }
+/* When menu open (or hover on desktop): hide logo, show links */
+.nav-hamburger.open ~ .nav-logo,
+.nav-links.open ~ .nav-logo { opacity: 0; pointer-events: none; }
 
-.nav-hamburger:hover ~ .nav-links,
-.nav-links:hover { opacity: 1; pointer-events: auto; }
+.nav-hamburger.open ~ .nav-links,
+.nav-links.open { opacity: 1; pointer-events: auto; }
+
+@media (hover: hover) {
+  .nav-hamburger:hover ~ .nav-logo,
+  .nav-links:hover ~ .nav-logo { opacity: 0; pointer-events: none; }
+
+  .nav-hamburger:hover ~ .nav-links,
+  .nav-links:hover { opacity: 1; pointer-events: auto; }
+}
+
+/* On narrow screens the centered row overflows — drop into a vertical panel */
+@media (max-width: 768px) {
+  .nav-links {
+    top: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+}
 
 /* ── HERO ── */
 #home {
