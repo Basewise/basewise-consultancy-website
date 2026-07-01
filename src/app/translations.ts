@@ -40,7 +40,7 @@ export const translations = {
         {
           label: "Requirement management tooling",
           title: "Online tooling",
-          text: "Complexe projecten genereren grote hoeveelheden data. Basewise zet geavanceerde, cloudgebaseerde tooling in om die data gestructureerd te beheren, inzichtelijk te maken en effectief te benutten. Zo valt niets tussen wal en schip.",
+          text: "Complexe projecten genereren grote hoeveelheden data. Als expert in Relatics-support en -tooling zet Basewise geavanceerde, cloudgebaseerde oplossingen in om die data gestructureerd te beheren, inzichtelijk te maken en effectief te benutten. Zo valt niets tussen wal en schip.",
         },
         {
           label: "Kunstmatige Intelligentie",
@@ -181,7 +181,7 @@ export const translations = {
         {
           label: "Requirement management tooling",
           title: "Online tooling",
-          text: "Complex projects generate vast amounts of data. Basewise deploys advanced, cloud-based tooling to manage, visualise and effectively utilise that data. Nothing falls through the cracks.",
+          text: "Complex projects generate vast amounts of data. As an expert in Relatics support and tooling, Basewise deploys advanced, cloud-based solutions to manage, visualise and effectively utilise that data. Nothing falls through the cracks.",
         },
         {
           label: "Artificial Intelligence",
