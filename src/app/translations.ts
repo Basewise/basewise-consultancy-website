@@ -38,12 +38,12 @@ export const translations = {
           text: "Risico\u2019s zijn onvermijdelijk, maar hoeven geen verrassing te zijn. Basewise identificeert, beoordeelt en beheert potenti\u00eble gevaren vroegtijdig, zodat projecten, financi\u00ebn en resultaten beschermd blijven en teams met vertrouwen kunnen doorwerken.",
         },
         {
-          label: "Kunstmatige Intelligentie",
+          label: "Requirement management tooling",
           title: "Online tooling",
           text: "Complexe projecten genereren grote hoeveelheden data. Basewise zet geavanceerde, cloudgebaseerde tooling in om die data gestructureerd te beheren, inzichtelijk te maken en effectief te benutten. Zo valt niets tussen wal en schip.",
         },
         {
-          label: "Requirement management tooling",
+          label: "Kunstmatige Intelligentie",
           title: "AI SE solutions",
           text: "Basewise integreert AI-toepassingen direct in het Systems Engineering-proces. Van requirements-analyse tot verificatieplanning: onze oplossingen versnellen de SE-processtappen en leveren aantoonbare kwaliteitswinst, zodat engineers zich kunnen richten op wat er echt toe doet.",
         },
@@ -179,12 +179,12 @@ export const translations = {
           text: "Risks are inevitable, but they don\u2019t have to be a surprise. Basewise identifies, assesses and manages potential hazards early on, so that projects, finances and results remain protected and teams can continue working with confidence.",
         },
         {
-          label: "Artificial Intelligence",
+          label: "Requirement management tooling",
           title: "Online tooling",
           text: "Complex projects generate vast amounts of data. Basewise deploys advanced, cloud-based tooling to manage, visualise and effectively utilise that data. Nothing falls through the cracks.",
         },
         {
-          label: "Requirement management tooling",
+          label: "Artificial Intelligence",
           title: "AI SE solutions",
           text: "Basewise integrates AI applications directly into the Systems Engineering process. From requirements analysis to verification planning: our solutions accelerate SE process steps and deliver demonstrable quality gains, so engineers can focus on what truly matters.",
         },
