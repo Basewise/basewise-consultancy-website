@@ -186,20 +186,10 @@ nav {
 
 .nav-links a:hover { color: var(--navy); }
 
-/* When menu open (or hover on desktop): hide logo, show links */
-.nav-hamburger.open ~ .nav-logo,
-.nav-links.open ~ .nav-logo { opacity: 0; pointer-events: none; }
+/* When menu open: hide logo, show links (click-driven on all devices) */
+.nav-hamburger.open ~ .nav-logo { opacity: 0; pointer-events: none; }
 
-.nav-hamburger.open ~ .nav-links,
-.nav-links.open { opacity: 1; pointer-events: auto; }
-
-@media (hover: hover) {
-  .nav-hamburger:hover ~ .nav-logo,
-  .nav-links:hover ~ .nav-logo { opacity: 0; pointer-events: none; }
-
-  .nav-hamburger:hover ~ .nav-links,
-  .nav-links:hover { opacity: 1; pointer-events: auto; }
-}
+.nav-hamburger.open ~ .nav-links { opacity: 1; pointer-events: auto; }
 
 /* On narrow screens the centered row overflows — drop into a vertical panel */
 @media (max-width: 768px) {
